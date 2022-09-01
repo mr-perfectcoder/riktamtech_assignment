@@ -5,7 +5,7 @@ import UserList from './components/UserList/UserList';
 import './App.css'
 function App() {
   return (
-    <div className='flex p-3 h-full'>
+    <div className='flex p-5 h-full'>
       <UserList />
       <Chat />
       <UserInfo />

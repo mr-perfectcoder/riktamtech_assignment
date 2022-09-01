@@ -9,7 +9,7 @@ import {
 import { TbArchive, TbUsers, TbCalendarEvent } from 'react-icons/tb'
 const UserInfo = () => {
   return (
-    <div className='flex-auto w-[20%]'>
+    <div className='flex-auto w-[20%] overflow-y-scroll fullHeight scrollBar'>
       <div>
         <div className='p-2'>
           <div className='box-border h-56 w-full p-4 bg-indigo-50 rounded-[15px] border-2 pt-4'>

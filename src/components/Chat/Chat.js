@@ -6,7 +6,7 @@ const Chat = () => {
   return (
     <div className='flex-auto w-[60%] pt-2 pb-2 pl-10 pr-10'>
       <div className='h-full box-border bg-blue-50 rounded-2xl'>
-        <div className='h-[70px] box-border bg-white rounded-xl   w-[50%] fixed bottom-[50px] ml-[25px] shadow-lg'>
+        <div className='h-[70px] box-border bg-white rounded-xl   w-[50%] fixed bottom-[60px] ml-[25px] shadow-lg'>
           <div className='flex  pl-5 pt-4 pr-5 items-center'>
             <div className='flex w-10'>
               <RiAttachment2 size={26} className='text-gray-500' />
