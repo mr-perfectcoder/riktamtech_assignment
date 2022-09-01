@@ -161,8 +161,8 @@ const UserInfo = () => {
               </div>
               <div className=''>
                 <div className='ml-[10px]'>
-                  <div className='w-2 h-20 rounded-md bg-indigo-500 '></div>
-                  <div className='w-2 h-2  bg-indigo-500 rounded mt-2'></div>
+                  <div className='w-2 h-20 rounded-md bg-[#1c56f3] '></div>
+                  <div className='w-2 h-2  bg-[#1c56f3] rounded mt-2'></div>
                 </div>
                 <p>TUE</p>
               </div>
@@ -208,13 +208,13 @@ const UserInfo = () => {
           {/* OnBording Client */}
           <div className='mt-5'>
             <div className='box-border h-auto w-full p-4 bg-blue-50 rounded-[15px] border-2 pt-5'>
-              <h2 className='font-Poppins  text-lg font-bold text-center'>
+              <h2 className='font-Poppins  text-lg font-bold text-center mb-3'>
                 Onboard Clients
               </h2>
               <p className=' font-Poppins text-md text-center text-gray-500 '>
                 Share the link with prospcets and discuss all stuff
               </p>
-              <div className='flex justify-center mt-2'>
+              <div className='flex justify-center mt-3'>
                 <button className='border-2  w-28 h-10 bg-[#1c56f3]   rounded-md'>
                   <div className='flex justify-center items-center'>
                     <div>

@@ -1,3 +1,4 @@
+
 .scrollBar::-webkit-scrollbar {
     display: none;
 }
@@ -9,4 +10,20 @@
 }
 .fullHeight{
   height: 92vh !important;
+}
+
+.chatScroll::-webkit-scrollbar {
+  width: 11px;
+}
+.chatScroll {
+  scrollbar-width: thin;
+  scrollbar-color: #90A4AE #CFD8DC;
+}
+.chatScroll::-webkit-scrollbar-track {
+  background: #CFD8DC;
+}
+.chatScroll::-webkit-scrollbar-thumb {
+  background-color: #90A4AE ;
+  border-radius: 6px;
+  border: 3px solid #CFD8DC;
 }

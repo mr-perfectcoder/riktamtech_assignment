@@ -1,41 +1,22 @@
-import React from 'react'
-import { RiAttachment2 } from 'react-icons/ri'
-import { BsEmojiSmile } from 'react-icons/bs'
-import { IoMdSend } from 'react-icons/io'
+import React, { useEffect, useRef } from 'react'
+
+import Messages from './Messages'
+import Send from './Send'
 const Chat = () => {
+  const endOfMessagesRef = useRef(null)
+  const scrollToBottom = () => {
+    endOfMessagesRef.current?.scrollIntoView()
+  }
+  useEffect(() => {
+ scrollToBottom()
+  }, [])
+  
   return (
     <div className='flex-auto w-[60%] pt-2 pb-2 pl-10 pr-10'>
-      <div className='h-full box-border bg-blue-50 rounded-2xl'>
-        <div className='h-[70px] box-border bg-white rounded-xl   w-[50%] fixed bottom-[60px] ml-[25px] shadow-lg'>
-          <div className='flex  pl-5 pt-4 pr-5 items-center'>
-            <div className='flex w-10'>
-              <RiAttachment2 size={26} className='text-gray-500' />
-            </div>
-            <div className='w-[85%]'>
-              <label className='relative block'>
-                <input
-                  className='placeholder:font-Poppins placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-3 pr-9 shadow-sm focus:outline-none  focus:none focus:ring-1 sm:text-sm'
-                  placeholder='Enter your message here'
-                  type='text'
-                  name='search'
-                />
-                <span className='absolute inset-y-0 right-0 pr-3 flex items-center pl-2'>
-                  <BsEmojiSmile className='text-yellow-500' />
-                </span>
-              </label>
-            </div>
-            <div>
-              <button className='bg-[#1c56f3] w-20 h-9 rounded-md text-white ml-3'>
-                <div className='flex items-center justify-center'>
-                  <p>Send</p>
-                  <p className='ml-1 mt-[2px]'>
-                    <IoMdSend />
-                  </p>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
+      <div className='fullHeight overflow-y-scroll box-border bg-blue-50 rounded-2xl overflow-hidden chatScroll '>
+        <Messages />
+        <Send endOfMessagesRef={endOfMessagesRef} />
+        <div ref={endOfMessagesRef} />
       </div>
     </div>
   )
