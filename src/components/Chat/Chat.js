@@ -8,14 +8,16 @@ const Chat = () => {
     endOfMessagesRef.current?.scrollIntoView()
   }
   useEffect(() => {
- scrollToBottom()
+    scrollToBottom()
   }, [])
-  
+
   return (
-    <div className='flex-auto w-[60%] pt-2 pb-2 pl-10 pr-10'>
+    <div className='pt-2 pb-2 pl-10 pr-10'>
       <div className='fullHeight overflow-y-scroll box-border bg-blue-50 rounded-2xl overflow-hidden chatScroll '>
         <Messages />
-        <Send endOfMessagesRef={endOfMessagesRef} />
+        <div className=' w-full  px-8 bottom-0 sticky mb-5'>
+          <Send endOfMessagesRef={endOfMessagesRef} />
+        </div>
         <div ref={endOfMessagesRef} />
       </div>
     </div>

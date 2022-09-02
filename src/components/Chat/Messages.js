@@ -5,7 +5,7 @@ const Messages = () => {
 
   return (
     <div>
-      <div className='mb-52 mt-10'>
+      <div className='mt-10 mb-5'>
         <Message status={true} />
         <Message status={false} />
         <Message status={true} />

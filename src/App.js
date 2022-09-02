@@ -1,15 +1,10 @@
 import React from 'react';
-import Chat from './components/Chat/Chat';
-import UserInfo from './components/UserInfo/UserInfo';
-import UserList from './components/UserList/UserList';
+
 import './App.css'
+import Layout from './components/Layout';
 function App() {
   return (
-    <div className='flex p-5 h-full'>
-      <UserList />
-      <Chat />
-      <UserInfo />
-    </div>
+   <Layout/>
   )
 }
 

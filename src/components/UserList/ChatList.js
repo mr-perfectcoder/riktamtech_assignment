@@ -20,14 +20,14 @@ const ChatList = () => {
     setshowActive(!showActive)
   }
   return (
-    <div className='pr-4 pl-2 mt-6'>
+    <div className='lg:pr-1  pl-2 mt-2'>
       <div className='cursor-pointer' onClick={handleActive}>
         <div className='flex justify-between'>
           <div className='flex'>
-            <h1 className='font-Poppins font-semibold '>
+            <h1 className='font-Poppins font-semibold text-sm'>
               Active Conversations
             </h1>
-            <div className='bg-gray-200 w-5 h-5 items-center  rounded-full pl-[5.5px] pt-[1.5px] ml-2 mt-[3px]'>
+            <div className='bg-gray-200 w-5 h-5 items-center  rounded-full pl-[5.5px] pt-[1.5px] ml-2 mt-[1px]'>
               <p className='font-Poppins font-semibold text-[12px]'>4</p>
             </div>
           </div>
@@ -52,15 +52,15 @@ const ChatList = () => {
         <div className='cursor-pointer' onClick={handleAcrhive}>
           <div className='flex justify-between'>
             <div className='flex'>
-              <h1 className='font-Poppins font-semibold '>
+              <h1 className='font-Poppins font-semibold text-sm'>
                 Archived Conversations
               </h1>
-              <div className='bg-gray-200 w-5 h-5 items-center  rounded-full pl-[6.5px] pt-[1.5px] ml-2 mt-[3px]'>
+              <div className='bg-gray-200 w-5 h-5 items-center  rounded-full pl-[6.5px] pt-[1.5px] ml-2 mt-[1px]'>
                 <p className='font-Poppins font-semibold text-[12px]'>7</p>
               </div>
             </div>
 
-            <div className='mt-1'>
+            <div className='mt-1 '>
               <CollpaseIcon active={showArchived} />
             </div>
           </div>

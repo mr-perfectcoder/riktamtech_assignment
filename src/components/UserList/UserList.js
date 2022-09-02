@@ -9,10 +9,12 @@ const UserList = () => {
     setactive(checked)
   }
   return (
-    <div className='flex-auto w-[20%]'>
+    <div className=''>
       <div className='flex align-middle'>
         <img src='./logo.png' alt='logo' className='w-[50px]' />
-        <h1 className='mt-[4.5px] text-xl font-Poppins font-semibold ml-2'>QuickChat</h1>
+        <h1 className='mt-[4.5px] text-xl font-Poppins font-semibold ml-2'>
+          QuickChat
+        </h1>
       </div>
       <div className='p-2 mt-1'>
         <div className='box-border h-60 w-full p-4 bg-blue-50 rounded-[15px] border-2 pt-5'>

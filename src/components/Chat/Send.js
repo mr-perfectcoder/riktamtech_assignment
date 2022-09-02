@@ -3,12 +3,11 @@ import { RiAttachment2 } from 'react-icons/ri'
 import { BsEmojiSmile } from 'react-icons/bs'
 import { IoMdSend } from 'react-icons/io'
 const Send = ({ endOfMessagesRef }) => {
-  const onSubmit =()=>{
-     endOfMessagesRef.current.scrollIntoView({ behavoir: 'smooth' })
+  const onSubmit = () => {
+    endOfMessagesRef.current.scrollIntoView({ behavoir: 'smooth' })
   }
   return (
-    
-    <div className='h-[70px] box-border bg-white rounded-xl   w-[50%] fixed bottom-0 mb-20 ml-[25px] shadow-lg'>
+    <div className='h-[70px] w-full box-border bg-white rounded-xl   bottom-0   shadow-lg'>
       <div className='flex  pl-5 pt-4 pr-5 items-center'>
         <div className='flex w-10'>
           <RiAttachment2 size={26} className='text-gray-500' />

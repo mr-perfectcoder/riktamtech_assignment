@@ -9,7 +9,7 @@ import {
 import { TbArchive, TbUsers, TbCalendarEvent } from 'react-icons/tb'
 const UserInfo = () => {
   return (
-    <div className='flex-auto w-[20%] overflow-y-scroll fullHeight scrollBar'>
+    <div className='overflow-y-scroll fullHeight scrollBar'>
       <div>
         <div className='p-2'>
           <div className='box-border h-56 w-full p-4 bg-indigo-50 rounded-[15px] border-2 pt-4'>
@@ -64,15 +64,15 @@ const UserInfo = () => {
               <div className='w-[45%] bg-indigo-200 h-14 p-2 rounded-2xl'>
                 <div className='flex items-center '>
                   <div className='mt-[2px]'>
-                    <div className='w-[38px] h-[38px] bg-indigo-300 rounded-full p-1'>
+                    <div className='w-[36px] h-[36px] bg-indigo-300 rounded-full p-1'>
                       <BiTimeFive className='text-[#1c56f3]  ' size={30} />
                     </div>
                   </div>
-                  <div className='ml-2'>
-                    <p className='text-[#1c56f3]  font-Poppins font-extrabold '>
+                  <div className='ml-1'>
+                    <p className='text-[#1c56f3]  font-Poppins font-extrabold text-sm '>
                       13h
                     </p>
-                    <p className='-mt-1 text-[11px] font-Poppins font-semibold text-gray-500'>
+                    <p className='-mt-1 text-[10px] font-Poppins font-semibold text-gray-500'>
                       Time
                     </p>
                   </div>
@@ -81,18 +81,18 @@ const UserInfo = () => {
               <div className='w-[45%] bg-green-100 h-14 p-2 rounded-2xl ml-5'>
                 <div className='flex items-center '>
                   <div className='mt-[2px]'>
-                    <div className='w-[38px] h-[38px] bg-green-200 rounded-full p-1'>
+                    <div className='w-[36px] h-[36px] bg-green-200 rounded-full p-1'>
                       <TbUsers
                         className='text-green-500  ml-1 mt-1'
                         size={22}
                       />
                     </div>
                   </div>
-                  <div className='ml-2'>
-                    <p className='text-green-500 font-Poppins font-extrabold '>
+                  <div className='ml-1'>
+                    <p className='text-green-500 font-Poppins font-extrabold text-sm'>
                       188
                     </p>
-                    <p className='-mt-1 text-[11px] font-Poppins font-semibold text-gray-500'>
+                    <p className='-mt-1 text-[10px] font-Poppins font-semibold text-gray-500'>
                       Atended
                     </p>
                   </div>
@@ -101,18 +101,18 @@ const UserInfo = () => {
               <div className='w-[45%] bg-purple-100 h-14 p-2 rounded-2xl mt-5'>
                 <div className='flex items-center '>
                   <div className='mt-[2px]'>
-                    <div className='w-[38px] h-[38px] bg-purple-200 rounded-full p-1'>
+                    <div className='w-[36px] h-[36px] bg-purple-200 rounded-full p-1'>
                       <TbCalendarEvent
                         className='text-purple-500  ml-1 mt-1'
                         size={22}
                       />
                     </div>
                   </div>
-                  <div className='ml-2'>
-                    <p className='text-purple-500 font-Poppins font-extrabold '>
+                  <div className='ml-1'>
+                    <p className='text-purple-500 font-Poppins font-extrabold  text-sm'>
                       119
                     </p>
-                    <p className='-mt-1 text-[11px] font-Poppins font-semibold text-gray-500'>
+                    <p className='-mt-1 text-[10px] font-Poppins font-semibold text-gray-500 '>
                       Meetings
                     </p>
                   </div>
@@ -121,18 +121,18 @@ const UserInfo = () => {
               <div className='w-[45%] bg-orange-100 h-14 p-2 rounded-2xl ml-5 mt-5'>
                 <div className='flex items-center '>
                   <div className='mt-[2px]'>
-                    <div className='w-[38px] h-[38px] bg-orange-200 rounded-full p-1'>
+                    <div className='w-[36px] h-[36px] bg-orange-200 rounded-full p-1'>
                       <BiMessageAltX
                         className='text-orange-500  ml-1 mt-1'
                         size={22}
                       />
                     </div>
                   </div>
-                  <div className='ml-2'>
-                    <p className='text-orange-500 font-Poppins font-extrabold '>
+                  <div className='ml-1'>
+                    <p className='text-orange-500 font-Poppins font-extrabold text-sm '>
                       41
                     </p>
-                    <p className='-mt-1 text-[11px] font-Poppins font-semibold text-gray-500'>
+                    <p className='-mt-1 text-[10px] font-Poppins font-semibold text-gray-500'>
                       Rejected
                     </p>
                   </div>
@@ -157,35 +157,35 @@ const UserInfo = () => {
                   <div className='w-2 h-2  bg-indigo-200 rounded mt-2'></div>
                 </div>
 
-                <p>MON</p>
+                <p className='text-sm'>MON</p>
               </div>
               <div className=''>
                 <div className='ml-[10px]'>
                   <div className='w-2 h-20 rounded-md bg-[#1c56f3] '></div>
                   <div className='w-2 h-2  bg-[#1c56f3] rounded mt-2'></div>
                 </div>
-                <p>TUE</p>
+                <p className='text-sm'>TUE</p>
               </div>
               <div className=''>
                 <div className='ml-[10px]'>
                   <div className='w-2 h-16 mt-4 rounded-md bg-indigo-200 '></div>
                   <div className='w-2 h-2  bg-indigo-200 rounded mt-2'></div>
                 </div>
-                <p>WED</p>
+                <p className='text-sm'>WED</p>
               </div>
               <div className=''>
                 <div className='ml-[10px]'>
                   <div className='w-2 h-14 mt-6 rounded-md bg-indigo-200 '></div>
                   <div className='w-2 h-2  bg-indigo-200 rounded mt-2'></div>
                 </div>
-                <p>THU</p>
+                <p className='text-sm'>THU</p>
               </div>
               <div className=''>
                 <div className='ml-[8px]'>
                   <div className='w-2 h-12 mt-8 rounded-md bg-indigo-200 '></div>
                   <div className='w-2 h-2  bg-indigo-200 rounded mt-2'></div>
                 </div>
-                <p>FRI</p>
+                <p className='text-sm'>FRI</p>
               </div>
 
               <div className=''>
@@ -193,14 +193,14 @@ const UserInfo = () => {
                   <div className='w-2 h-8 mt-12 rounded-md bg-indigo-200 '></div>
                   <div className='w-2 h-2  bg-indigo-200 rounded mt-2'></div>
                 </div>
-                <p>SAT</p>
+                <p className='text-sm'>SAT</p>
               </div>
               <div className=''>
                 <div className='ml-[10px]'>
                   <div className='w-2 h-12 mt-8 rounded-md bg-indigo-200 '></div>
                   <div className='w-2 h-2  bg-indigo-200 rounded mt-2'></div>
                 </div>
-                <p>SUN</p>
+                <p className='text-sm'>SUN</p>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@
   scrollbar-width: none; 
 }
 .fullHeight{
-  height: 92vh !important;
+  height: 92.5vh !important;
 }
 
 .chatScroll::-webkit-scrollbar {
