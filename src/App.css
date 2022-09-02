@@ -13,17 +13,17 @@
 }
 
 .chatScroll::-webkit-scrollbar {
-  width: 11px;
+  width: 5px;
 }
 .chatScroll {
   scrollbar-width: thin;
-  scrollbar-color: #90A4AE #CFD8DC;
+  scrollbar-color: #90A4AE ;
 }
 .chatScroll::-webkit-scrollbar-track {
-  background: #CFD8DC;
+  background: transparent;
 }
 .chatScroll::-webkit-scrollbar-thumb {
   background-color: #90A4AE ;
-  border-radius: 6px;
-  border: 3px solid #CFD8DC;
+  border-radius: 10px;
+  /* border: 3px solid #CFD8DC; */
 }

@@ -7,6 +7,7 @@ const Send = ({ endOfMessagesRef }) => {
      endOfMessagesRef.current.scrollIntoView({ behavoir: 'smooth' })
   }
   return (
+    
     <div className='h-[70px] box-border bg-white rounded-xl   w-[50%] fixed bottom-0 mb-20 ml-[25px] shadow-lg'>
       <div className='flex  pl-5 pt-4 pr-5 items-center'>
         <div className='flex w-10'>
