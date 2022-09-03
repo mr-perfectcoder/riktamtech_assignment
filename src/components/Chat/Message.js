@@ -24,7 +24,7 @@ const Message = ({ message, image }) => {
 
       <div className=' mt-4'>
         <div
-          className={`flex space-x-4 p-3    rounded-lg ${
+          className={`flex space-x-4 p-3  rounded-lg ${
             isUserMessage
               ? 'rounded-br-none bg-gray-900 text-white'
               : 'rounded-bl-none bg-white text-gray-900 shadow-md'
