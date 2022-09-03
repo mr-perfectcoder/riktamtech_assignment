@@ -6,9 +6,9 @@ const MobileBack = () => {
   let { username } = useParams()
   return (
     <div className='lg:hidden sm:show xs:show fixed w-full z-50 top-0'>
-      <div className='h-10 bg-blue-400 '>
+      <div className='h-14 bg-blue-400 '>
         <div className='flex'>
-          <div className='mt-2 ml-4'>
+          <div className='mt-4 ml-4'>
             <BiArrowBack
               size={24}
               color={'white'}
@@ -21,7 +21,7 @@ const MobileBack = () => {
               <div className='h-8 w-8 bg-white rounded-full items-center justify-center ml-2 cursor-pointer'>
                 <img
                   src='./bill.png'
-                  className='mt-1'
+                  className='mt-3'
                   alt=''
                   
                   onClick={() => navigate('/detail/herny')}
@@ -29,7 +29,7 @@ const MobileBack = () => {
               </div>
             ) : (
               <div>
-                <p className='mt-[8px] ml-2 font-Poppins text-white'>Back</p>
+                <p className='mt-[16px] ml-2 font-Poppins text-white'>Back</p>
               </div>
             )}
           </div>

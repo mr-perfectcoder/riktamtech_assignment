@@ -18,7 +18,7 @@ const Chat = () => {
       <MobileBack />
       <div className='lg:h-lgFull  sm:h-smFull  xs:h-smFull overflow-y-scroll box-border bg-blue-50 rounded-2xl overflow-hidden chatScroll '>
         <Messages />
-        <div className=' w-full  px-8 bottom-0 sticky mb-5'>
+        <div className=' w-full  lg:px-8 bottom-0 sticky lg:mb-5'>
           <Send endOfMessagesRef={endOfMessagesRef} />
         </div>
         <div ref={endOfMessagesRef} />
