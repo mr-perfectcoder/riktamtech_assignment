@@ -1,0 +1,415 @@
+[
+  {
+    "name": "Herny Boyd",
+    "username": "herny",
+    "email": "herny.boyd@gmail.com",
+    "image": "herny.png",
+    "status": "active",
+    "messages": [
+      {
+        "username": "bill",
+        "message": "Hi herny !!",
+        "createdAt": "9/3/2022, 9:00:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "How can I help you today?",
+        "createdAt": "9/3/2022, 9:05:04 PM"
+      },
+      {
+        "username": "herny",
+        "message": "Hey Bill, nice to meet you!",
+        "createdAt": "9/3/2022, 9:08:04 PM"
+      },
+      {
+        "username": "herny",
+        "message": "Hope you are doing fine.",
+        "createdAt": "9/3/2022, 9:12:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "I'm good thanks for asking.",
+        "createdAt": "9/3/2022, 9:14:04 PM"
+      },
+      {
+        "username": "herny",
+        "message": "I am interested to know more about your prices and services you offer",
+        "createdAt": "9/3/2022, 9:16:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Sure, please refer to https://www.google.com/abc",
+        "createdAt": "9/3/2022, 9:16:55 PM"
+      },
+      {
+        "username": "herny",
+        "message": "Awsome ,will get in touch if there's anything unclear.",
+        "createdAt": "9/3/2022, 9:16:59 PM"
+      },
+      {
+        "username": "herny",
+        "message": "Thank you, Have a great day.",
+        "createdAt": "9/3/2022, 9:18:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Thanks buddy, you too as well.",
+        "createdAt": "9/3/2022, 9:19:04 PM"
+      }
+    ]
+  },
+  {
+    "name": "Martha  Curtis",
+    "username": "martha",
+    "email": "martha.curtis@gmail.com",
+    "image": "martha.png",
+    "status": "active",
+    "messages": [
+      {
+        "username": "bill",
+        "message": "Hi martha !!",
+        "createdAt": "9/3/2022, 9:00:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "How can I help you today?",
+        "createdAt": "9/3/2022, 9:05:04 PM"
+      },
+      {
+        "username": "martha",
+        "message": "Hey Bill, nice to meet you!",
+        "createdAt": "9/3/2022, 9:08:04 PM"
+      },
+      {
+        "username": "martha",
+        "message": "Hope you are doing fine.",
+        "createdAt": "9/3/2022, 9:12:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "I'm good thanks for asking.",
+        "createdAt": "9/3/2022, 9:14:04 PM"
+      },
+      {
+        "username": "martha",
+        "message": "I am interested to know more about your prices and services you offer",
+        "createdAt": "9/3/2022, 9:16:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Sure, please refer to https://www.google.com/abc",
+        "createdAt": "9/3/2022, 9:16:55 PM"
+      },
+      {
+        "username": "martha",
+        "message": "Awsome ,will get in touch if there's anything unclear.",
+        "createdAt": "9/3/2022, 9:16:59 PM"
+      },
+      {
+        "username": "martha",
+        "message": "Thank you, Have a great day.",
+        "createdAt": "9/3/2022, 9:18:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Thanks buddy, you too as well.",
+        "createdAt": "9/3/2022, 9:19:04 PM"
+      }
+    ]
+  },
+  {
+    "name": "Phillip Tucker",
+    "username": "phillip",
+    "email": "phillip.tucker@gmail.com",
+    "image": "phillip.png",
+    "status": "active",
+    "messages": [
+      {
+        "username": "bill",
+        "message": "Hi phillip !!",
+        "createdAt": "9/3/2022, 9:00:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "How can I help you today?",
+        "createdAt": "9/3/2022, 9:05:04 PM"
+      },
+      {
+        "username": "phillip",
+        "message": "Hey Bill, nice to meet you!",
+        "createdAt": "9/3/2022, 9:08:04 PM"
+      },
+      {
+        "username": "phillip",
+        "message": "Hope you are doing fine.",
+        "createdAt": "9/3/2022, 9:12:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "I'm good thanks for asking.",
+        "createdAt": "9/3/2022, 9:14:04 PM"
+      },
+      {
+        "username": "phillip",
+        "message": "I am interested to know more about your prices and services you offer",
+        "createdAt": "9/3/2022, 9:16:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Sure, please refer to https://www.google.com/abc",
+        "createdAt": "9/3/2022, 9:16:55 PM"
+      },
+      {
+        "username": "phillip",
+        "message": "Awsome ,will get in touch if there's anything unclear.",
+        "createdAt": "9/3/2022, 9:16:59 PM"
+      },
+      {
+        "username": "phillip",
+        "message": "Thank you, Have a great day.",
+        "createdAt": "9/3/2022, 9:18:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Thanks buddy, you too as well.",
+        "createdAt": "9/3/2022, 9:19:04 PM"
+      }
+    ]
+  },
+  {
+    "name": "Christine Reid",
+    "username": "christine",
+    "email": "christine.reid@gmail.com",
+    "image": "christine.png",
+    "status": "active",
+    "messages": [
+      {
+        "username": "bill",
+        "message": "Hi christine !!",
+        "createdAt": "9/3/2022, 9:00:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "How can I help you today?",
+        "createdAt": "9/3/2022, 9:05:04 PM"
+      },
+      {
+        "username": "christine",
+        "message": "Hey Bill, nice to meet you!",
+        "createdAt": "9/3/2022, 9:08:04 PM"
+      },
+      {
+        "username": "christine",
+        "message": "Hope you are doing fine.",
+        "createdAt": "9/3/2022, 9:12:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "I'm good thanks for asking.",
+        "createdAt": "9/3/2022, 9:14:04 PM"
+      },
+      {
+        "username": "christine",
+        "message": "I am interested to know more about your prices and services you offer",
+        "createdAt": "9/3/2022, 9:16:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Sure, please refer to https://www.google.com/abc",
+        "createdAt": "9/3/2022, 9:16:55 PM"
+      },
+      {
+        "username": "christine",
+        "message": "Awsome ,will get in touch if there's anything unclear.",
+        "createdAt": "9/3/2022, 9:16:59 PM"
+      },
+      {
+        "username": "christine",
+        "message": "Thank you, Have a great day.",
+        "createdAt": "9/3/2022, 9:18:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Thanks buddy, you too as well.",
+        "createdAt": "9/3/2022, 9:19:04 PM"
+      }
+    ]
+  },
+  {
+    "name": "Jerry Guzman",
+    "username": "jerry",
+    "email": "jerry.guzman@gmail.com",
+    "image": "jerry.png",
+    "status": "active",
+    "messages": [
+      {
+        "username": "bill",
+        "message": "Hi jerry !!",
+        "createdAt": "9/3/2022, 9:00:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "How can I help you today?",
+        "createdAt": "9/3/2022, 9:05:04 PM"
+      },
+      {
+        "username": "jerry",
+        "message": "Hey Bill, nice to meet you!",
+        "createdAt": "9/3/2022, 9:08:04 PM"
+      },
+      {
+        "username": "jerry",
+        "message": "Hope you are doing fine.",
+        "createdAt": "9/3/2022, 9:12:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "I'm good thanks for asking.",
+        "createdAt": "9/3/2022, 9:14:04 PM"
+      },
+      {
+        "username": "jerry",
+        "message": "I am interested to know more about your prices and services you offer",
+        "createdAt": "9/3/2022, 9:16:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Sure, please refer to https://www.google.com/abc",
+        "createdAt": "9/3/2022, 9:16:55 PM"
+      },
+      {
+        "username": "jerry",
+        "message": "Awsome ,will get in touch if there's anything unclear.",
+        "createdAt": "9/3/2022, 9:16:59 PM"
+      },
+      {
+        "username": "jerry",
+        "message": "Thank you, Have a great day.",
+        "createdAt": "9/3/2022, 9:18:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Thanks buddy, you too as well.",
+        "createdAt": "9/3/2022, 9:19:04 PM"
+      }
+    ]
+  },
+  {
+    "name": "Russell Williams",
+    "username": "russell",
+    "email": "russell.williams@gmail.com",
+    "image": "russell.png",
+    "status": "active",
+    "messages": [
+      {
+        "username": "bill",
+        "message": "Hi russell !!",
+        "createdAt": "9/3/2022, 9:00:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "How can I help you today?",
+        "createdAt": "9/3/2022, 9:05:04 PM"
+      },
+      {
+        "username": "russell",
+        "message": "Hey Bill, nice to meet you!",
+        "createdAt": "9/3/2022, 9:08:04 PM"
+      },
+      {
+        "username": "russell",
+        "message": "Hope you are doing fine.",
+        "createdAt": "9/3/2022, 9:12:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "I'm good thanks for asking.",
+        "createdAt": "9/3/2022, 9:14:04 PM"
+      },
+      {
+        "username": "russell",
+        "message": "I am interested to know more about your prices and services you offer",
+        "createdAt": "9/3/2022, 9:16:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Sure, please refer to https://www.google.com/abc",
+        "createdAt": "9/3/2022, 9:16:55 PM"
+      },
+      {
+        "username": "russell",
+        "message": "Awsome ,will get in touch if there's anything unclear.",
+        "createdAt": "9/3/2022, 9:16:59 PM"
+      },
+      {
+        "username": "russell",
+        "message": "Thank you, Have a great day.",
+        "createdAt": "9/3/2022, 9:18:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Thanks buddy, you too as well.",
+        "createdAt": "9/3/2022, 9:19:04 PM"
+      }
+    ]
+  },
+  {
+    "name": "James Anuvis",
+    "username": "james",
+    "email": "james.anuvis@gmail.com",
+    "image": "james.png",
+    "status": "archived",
+    "messages": [
+      {
+        "username": "bill",
+        "message": "Hi james !!",
+        "createdAt": "9/3/2022, 9:00:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "How can I help you today?",
+        "createdAt": "9/3/2022, 9:05:04 PM"
+      },
+      {
+        "username": "james",
+        "message": "Hey Bill, nice to meet you!",
+        "createdAt": "9/3/2022, 9:08:04 PM"
+      },
+      {
+        "username": "james",
+        "message": "Hope you are doing fine.",
+        "createdAt": "9/3/2022, 9:12:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "I'm good thanks for asking.",
+        "createdAt": "9/3/2022, 9:14:04 PM"
+      },
+      {
+        "username": "james",
+        "message": "I am interested to know more about your prices and services you offer",
+        "createdAt": "9/3/2022, 9:16:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Sure, please refer to https://www.google.com/abc",
+        "createdAt": "9/3/2022, 9:16:55 PM"
+      },
+      {
+        "username": "james",
+        "message": "Awsome ,will get in touch if there's anything unclear.",
+        "createdAt": "9/3/2022, 9:16:59 PM"
+      },
+      {
+        "username": "james",
+        "message": "Thank you, Have a great day.",
+        "createdAt": "9/3/2022, 9:18:04 PM"
+      },
+      {
+        "username": "bill",
+        "message": "Thanks buddy, you too as well.",
+        "createdAt": "9/3/2022, 9:19:04 PM"
+      }
+    ]
+  }
+]

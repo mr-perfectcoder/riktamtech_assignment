@@ -9,7 +9,7 @@ const MobileView = () => {
     <div>
 
       {username && !user && (
-        <div className='-mt-2'>
+        <div className=''>
           <Chat />
         </div>
       )}

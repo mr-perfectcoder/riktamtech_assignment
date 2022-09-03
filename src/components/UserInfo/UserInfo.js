@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FiMail } from 'react-icons/fi'
 import {
   BiUserCircle,
@@ -7,19 +7,49 @@ import {
   BiLinkAlt,
 } from 'react-icons/bi'
 import { TbArchive, TbUsers, TbCalendarEvent } from 'react-icons/tb'
+import { useSelector, useDispatch } from 'react-redux'
 import MobileBack from '../MobileBack'
+import {
+  getMessage,
+  getUsers,
+  selectUsers,
+  statusUpdate,
+} from '../../features/users/userSlice'
+import { useParams } from 'react-router-dom'
+
 const UserInfo = () => {
+  let { user } = useParams()
+  const users = useSelector(selectUsers)
+  const dispatch = useDispatch()
+  useEffect(() => {
+    if (user) {
+      dispatch(getMessage(user))
+    }
+  }, [user])
+
+  const changeStatus = (status) => {
+    console.log(status)
+    dispatch(
+      statusUpdate({ status: status, username: users.messages[0].username })
+    )
+    dispatch(getUsers('active'))
+    dispatch(getUsers('archived'))
+    dispatch(getMessage(users.messages[0].username))
+  }
+
   return (
     <div className='lg:overflow-y-scroll fullHeight scrollBar'>
       <MobileBack />
       <div className=''>
         <div className='p-2'>
           <div className='box-border h-56 w-full p-4 bg-indigo-50 rounded-[15px] border-2 pt-4 sm:mt-14 xs:mt-14 lg:mt-0 '>
-            <div class='grid place-items-center'>
-              <div className='w-[80px] h-[80px] bg-blue-200 rounded-full p-[20px]'>
-                <p className='text-3xl font-Poppins font-extrabold text-gray-500 mt-1 ml-[3px]'>
-                  HB
-                </p>
+            <div className='grid place-items-center'>
+              <div className=''>
+                <img
+                  src={window.location.origin + '/' + users.messages[0].image}
+                  className='w-[90px] h-[90px]'
+                  alt=''
+                />
               </div>
             </div>
             <div>
@@ -29,7 +59,7 @@ const UserInfo = () => {
                 </div>
                 <div className='ml-2'>
                   <p className='font-Poppins text-xs font-semibold text-gray-600'>
-                    henryboyd@gmail.com
+                    {users.messages[0].email}
                   </p>
                 </div>
               </div>
@@ -39,24 +69,45 @@ const UserInfo = () => {
                 </div>
                 <div className='ml-2'>
                   <p className='font-Poppins text-xs font-semibold text-gray-600'>
-                    Henry Boyd
+                    {users.messages[0].name}
                   </p>
                 </div>
               </div>
             </div>
             <div className='flex justify-center mt-2'>
-              <button className='border-2  w-28 h-10 bg-white    border-[#1c56f3] rounded-md'>
-                <div className='flex justify-center items-center'>
-                  <div>
-                    <p className='text-[#1c56f3] font-Poppins text-xs font-semibold'>
-                      Archive
-                    </p>
+              {users.messages[0].status === 'active' ? (
+                <button
+                  className='border-2  w-28 h-10 bg-white    border-[#1c56f3] rounded-md'
+                  onClick={() => changeStatus('archived')}
+                >
+                  <div className='flex justify-center items-center'>
+                    <div>
+                      <p className='text-[#1c56f3] font-Poppins text-xs font-semibold'>
+                        Archive
+                      </p>
+                    </div>
+                    <div>
+                      <TbArchive className='text-[#1c56f3] font-Poppins ml-1' />
+                    </div>
                   </div>
-                  <div>
-                    <TbArchive className='text-[#1c56f3] font-Poppins ml-1' />
+                </button>
+              ) : (
+                <button
+                  className='border-2  w-28 h-10 bg-white  border-[#1c56f3] rounded-md'
+                  onClick={() => changeStatus('active')}
+                >
+                  <div className='flex justify-center items-center'>
+                    <div>
+                      <p className='text-[#1c56f3] font-Poppins text-xs font-semibold'>
+                        Active
+                      </p>
+                    </div>
+                    <div>
+                      <TbArchive className='text-[#1c56f3] font-Poppins ml-1' />
+                    </div>
                   </div>
-                </div>
-              </button>
+                </button>
+              )}
             </div>
           </div>
 

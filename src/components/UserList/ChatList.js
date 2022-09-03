@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CollpaseIcon from '../CollpaseIcon'
 import UserCard from './UserCard'
-const ChatList = () => {
+const ChatList = ({ activeUsers, archivedUser }) => {
   const [showActive, setshowActive] = useState(true)
   const [showArchived, setshowArchived] = useState(false)
 
@@ -15,10 +15,11 @@ const ChatList = () => {
     setshowArchived(!showArchived)
   }
 
-  const handleActive = ()=>{
+  const handleActive = () => {
     setshowArchived(false)
     setshowActive(!showActive)
   }
+
   return (
     <div className='lg:pr-1  pl-2 mt-2'>
       <div className='cursor-pointer' onClick={handleActive}>
@@ -28,7 +29,9 @@ const ChatList = () => {
               Active Conversations
             </h1>
             <div className='bg-gray-200 w-5 h-5 items-center  rounded-full pl-[5.5px] pt-[1.5px] ml-2 mt-[1px]'>
-              <p className='font-Poppins font-semibold text-[12px]'>4</p>
+              <p className='font-Poppins font-semibold text-[12px]'>
+                {activeUsers.length}
+              </p>
             </div>
           </div>
           <div className='mt-1'>
@@ -39,12 +42,9 @@ const ChatList = () => {
 
       {showActive && (
         <div className='lg:overflow-y-scroll lg:h-72 scrollBar'>
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
-          <UserCard />
+          {activeUsers.map((item, index) => {
+            return <UserCard user={item} key={index.toString()} />
+          })}
         </div>
       )}
 
@@ -56,7 +56,9 @@ const ChatList = () => {
                 Archived Conversations
               </h1>
               <div className='bg-gray-200 w-5 h-5 items-center  rounded-full pl-[6.5px] pt-[1.5px] ml-2 mt-[1px]'>
-                <p className='font-Poppins font-semibold text-[12px]'>7</p>
+                <p className='font-Poppins font-semibold text-[12px]'>
+                  {archivedUser.length}
+                </p>
               </div>
             </div>
 
@@ -68,12 +70,9 @@ const ChatList = () => {
 
         {showArchived && (
           <div className='lg:overflow-y-scroll lg:h-72 scrollBar'>
-            <UserCard />
-            <UserCard />
-            <UserCard />
-            <UserCard />
-            <UserCard />
-            <UserCard />
+            {archivedUser.map((item, index) => {
+              return <UserCard user={item} key={index.toString()} />
+            })}
           </div>
         )}
       </div>

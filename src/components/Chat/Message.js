@@ -1,7 +1,14 @@
 import React from 'react'
+import TimeAgo from 'timeago-react'
+const Message = ({ message, image }) => {
+  let isUserMessage = false
+  let userImage = image
+  if (message.username === 'bill') {
+    isUserMessage = true
+    userImage = 'bill.png'
+  }
 
-const Message = ({status}) => {
-   const isUserMessage = status
+
   return (
     <div
       className={`flex  ml-5  items-center mr-5 relative ${
@@ -9,7 +16,7 @@ const Message = ({status}) => {
       }`}
     >
       <div className={` h-16 w-16 ${isUserMessage && 'order-last ml-2'}`}>
-        <img src='./bill.png' alt='' />
+        <img src={window.location.origin + '/' + userImage} alt='' />
         <div className='flex h-2 w-2 -mt-5 ml-11  absolute rounded-full justify-center  items-center  bg-white'>
           <div className='h-[5px] w-[5px] rounded-full bg-green-600 '></div>
         </div>
@@ -23,23 +30,16 @@ const Message = ({status}) => {
               : 'rounded-bl-none bg-white text-gray-900 shadow-md'
           }`}
         >
-          hiii hfhljg jsdyiesdk
+          {message.message}
         </div>
         <div
           className={`flex text-[10px] mt-1 text-gray-400 ${
             isUserMessage && 'justify-end'
           }`}
         >
-          <span>9h ago</span>
+          <TimeAgo datetime={message.createdAt} />
         </div>
       </div>
-
-      {/* <TimeAgo
-            className={`text-[10px] italic text-gray-400 ${
-              isUserMessage && 'order-first pr-1'
-            }`}
-            datetime={message.createdAt}
-          /> */}
     </div>
   )
 }

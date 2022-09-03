@@ -1,55 +1,24 @@
 import React from 'react'
 import Message from './Message'
 
-const Messages = () => {
+const Messages = ({ messages, image }) => {
 
   return (
-    <div>
-      <div className='mt-10 mb-5'>
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-        <Message status={true} />
-        <Message status={false} />
-      </div>
+    <div className='mb-16'>
+      {messages[0].messages && (
+        <div className='mt-10 mb-5'>
+          {messages[0].messages.map((item, index) => {
+            return (
+              <Message
+                status={true}
+                image={image}
+                message={item}
+                key={index.toString()}
+              />
+            )
+          })}
+        </div>
+      )}
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BiArrowBack } from 'react-icons/bi'
 import { useNavigate, useParams } from 'react-router-dom'
-const MobileBack = () => {
+const MobileBack = ({ image, user }) => {
   const navigate = useNavigate()
   let { username } = useParams()
   return (
@@ -20,11 +20,10 @@ const MobileBack = () => {
             {username ? (
               <div className='h-8 w-8 bg-white rounded-full items-center justify-center ml-2 cursor-pointer'>
                 <img
-                  src='./bill.png'
+                  src={image}
                   className='mt-3'
                   alt=''
-                  
-                  onClick={() => navigate('/detail/herny')}
+                  onClick={() => navigate('/detail/' + user)}
                 />
               </div>
             ) : (
