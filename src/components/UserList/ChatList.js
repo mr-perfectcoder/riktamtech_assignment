@@ -38,7 +38,7 @@ const ChatList = () => {
       </div>
 
       {showActive && (
-        <div className='overflow-y-scroll h-72 scrollBar'>
+        <div className='lg:overflow-y-scroll lg:h-72 scrollBar'>
           <UserCard />
           <UserCard />
           <UserCard />
@@ -67,7 +67,7 @@ const ChatList = () => {
         </div>
 
         {showArchived && (
-          <div className='overflow-y-scroll h-72 scrollBar'>
+          <div className='lg:overflow-y-scroll lg:h-72 scrollBar'>
             <UserCard />
             <UserCard />
             <UserCard />

@@ -7,12 +7,14 @@ import {
   BiLinkAlt,
 } from 'react-icons/bi'
 import { TbArchive, TbUsers, TbCalendarEvent } from 'react-icons/tb'
+import MobileBack from '../MobileBack'
 const UserInfo = () => {
   return (
-    <div className='overflow-y-scroll fullHeight scrollBar'>
-      <div>
+    <div className='lg:overflow-y-scroll fullHeight scrollBar'>
+      <MobileBack />
+      <div className=''>
         <div className='p-2'>
-          <div className='box-border h-56 w-full p-4 bg-indigo-50 rounded-[15px] border-2 pt-4'>
+          <div className='box-border h-56 w-full p-4 bg-indigo-50 rounded-[15px] border-2 pt-4 sm:mt-10 xs:mt-10 lg:mt-0'>
             <div class='grid place-items-center'>
               <div className='w-[80px] h-[80px] bg-blue-200 rounded-full p-[20px]'>
                 <p className='text-3xl font-Poppins font-extrabold text-gray-500 mt-1 ml-[3px]'>
